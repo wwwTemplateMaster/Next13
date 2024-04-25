@@ -1,0 +1,256 @@
+/* #f6f6f6 */
+
+body {
+  background-color: #f6f6f6;
+}
+
+/* #f6f6f6 */
+
+.pricingTable {
+  color: #222;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1); /* Adjusted for thicker shadow */
+}
+
+.pricingTable .pricingTable-header {
+  color: #fff;
+  background: linear-gradient(to right, #16d787, #076fb3);
+  padding: 10px 40px 38px;
+  margin: 0 0 20px;
+  border-radius: 20px;
+  /* display: inline-block; */
+}
+.pricingTable .title {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+.pricingTable .price-value {
+  margin: 0 0 30px;
+  position: relative;
+  z-index: 1;
+}
+.pricingTable .price-value .amount {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 35px;
+  display: block;
+}
+.pricingTable .price-value .duration {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+.pricingTable .pricing-content {
+  text-align: left;
+  padding: 0;
+  margin: 0 0 40px;
+  list-style: none;
+  /* display: inline-block; */
+  position: relative;
+  z-index: 1;
+}
+.pricingTable .pricing-content li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0.5px;
+  padding: 0 0 0 28px;
+  margin: 0 0 7px;
+  position: relative;
+}
+.pricingTable .pricing-content li:last-child {
+  margin: 0;
+}
+.pricingTable .pricing-content li:before {
+  /* content: "\f00c"; */
+  color: #349008;
+  font-family: "Font Awesome 5 free";
+  font-size: 15px;
+  font-weight: 900;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.pricingTable .pricing-content li.disable:before {
+  content: "\f00d";
+  color: #ff3a3f;
+}
+.pricingTable .pricingTable-signup a {
+  color: #fff;
+  background: linear-gradient(to right, #16d787, #076fb3);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 30px 40px 7px;
+  border-radius: 20px;
+  /* display: inline-block; */
+  transition: all 0.3s ease-in-out;
+}
+.pricingTable .pricingTable-signup a:hover {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+.pricingTable.purple .pricingTable-header,
+.pricingTable.purple .pricingTable-signup a {
+  background: linear-gradient(to right, #cf2be1, #3b16ac);
+}
+.pricingTable.red .pricingTable-header,
+.pricingTable.red .pricingTable-signup a {
+  background: linear-gradient(to right, #ffd253, #d83b5c);
+}
+@media only screen and (max-width: 990px) {
+  .pricingTable {
+    margin: 0 0 40px;
+  }
+}
+
+/* Options */
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.pricing-list li .rounded-full {
+  border-radius: 9999px;
+}
+
+.pricing-list li .rounded-full .w-6,
+.pricing-list li .rounded-full .h-6 {
+  width: 24px;
+  height: 24px;
+}
+
+.pricing-list li .text-lg {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0.5px;
+  padding-left: 28px;
+}
+
+.pricing-list li .text-gray-700 {
+  color: #222; /* Adjust color as needed */
+}
+
+.pricing-list li .ml-3 {
+  margin-left: 0.75rem; /* 12px */
+}
+
+/* Options */
+
+/* Resolution mobile */
+
+/* Adjust layout for smaller screens */
+/* @media only screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-md-4 {
+    width: 100%;
+  }
+} */
+
+@media only screen and (max-width: 768px) {
+  .pricing-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pricing-col {
+    width: 100%;
+  }
+}
+
+/* Change with the name */
+/* .pricing-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing-col {
+  width: 100%;
+} */
+
+/* Change with the name */
+
+/* Resolution mobile */
+
+/* Pricing Text Resolution */
+/* Add this CSS code to your stylesheet */
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Pricing Text Resolution */
+
+/* Detailwind */
+
+.pricingTable-header {
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #f2f2f2; /* Adjust the color as needed */
+  /* You can add more styles as per your design */
+}
+
+/* Detailwind */
+
+/* Content */
+
+/* Styling for the list items */
+.pricing-content {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.pricing-content li {
+  display: flex; /* Display list items in a row */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 1rem; /* Add margin between list items */
+}
+
+/* Styling for the circle icon */
+.pricing-content li .rounded-full {
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  /* background-color: #34d399;  */
+}
+
+/* Styling for the SVG icon */
+.pricing-content li svg {
+  width: 1.5rem; /* Set the width of the SVG icon */
+  height: 1.5rem; /* Set the height of the SVG icon */
+  /* fill: #ffffff;  */
+  fill: #34d399; /* Set the fill color of the SVG icon */
+
+  stroke-width: 2; /* Set the stroke width of the SVG icon */
+  stroke-linecap: round; /* Set the line cap of the SVG icon */
+  stroke-linejoin: round; /* Set the line join of the SVG icon */
+  margin-bottom: -0.2rem; /* Adjust vertical alignment of the SVG icon */
+}
+
+/* Styling for the text */
+.pricing-content li span {
+  color: #333; /* Set the color of the text */
+}
+
+/* Content */
